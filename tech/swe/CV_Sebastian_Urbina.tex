@@ -1,0 +1,131 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-7pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\newcommand{\resumeItem}[2]{\item\small{\textbf{#1}{#2 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\linewidth}{@{\extracolsep{\fill}}l r}
+      \textbf{#1} & \textit{\small #4} \\
+      \textit{\small #2} & \textit{\small #3} \\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\begin{document}
+
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\Large Sebastián Ignacio Urbina Gajardo}} & 
+  Email: \href{mailto:sebastian.urbina97@gmail.com}{sebastian.urbina97@gmail.com} \\
+  \href{https://www.linkedin.com/in/sebaurbina/}{LinkedIn} |
+  \href{https://github.com/SebasUrbina}{GitHub} |
+  \href{https://sebasurbina.github.io/}{Website} & 
+  Mobile: +(56)-966719190 \\
+\end{tabular*}
+
+\vspace{8pt}
+\noindent
+Software Engineer with experience building production-grade backend and AI systems. Specialized in developing scalable agentic services, distributed processing pipelines, and cloud-native infrastructure. Strong foundation in programming, systems design, and cross-functional technical leadership. Focused on delivering reliable, high-performance systems with measurable impact.
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Chile}{Santiago, Chile}
+      {MSc in Data Science; GPA: 6.7/7.0}{2023 - 2024}
+    \resumeSubheading
+      {University of Chile}{Santiago, Chile}
+      {BSc in Industrial Engineering; GPA: 6.4/7.0}{2018 - 2024}
+      \resumeSubHeadingListStart
+        \resumeSubItem{Best Graduate of the Year 2024: }{ 1/244}
+        \resumeSubItem{Outstanding student: }{2018, 2019, 2020, 2021 \& 2022.}
+        \resumeSubItem{Teaching Assistant: }{Data Analysis and Causal Inference, Introduction to Deep Learning, Finance II \& Seminar of Thinking.}
+      \resumeSubHeadingListEnd
+  \resumeSubHeadingListEnd
+
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+   \resumeSubItem{}{\textbf{Languages:} Python, JavaScript, TypeScript, SQL, R, Go (learning).}
+   \resumeSubItem{}{\textbf{Technologies:} AWS, GCP, Kubernetes, Docker, Kafka, Git, FastAPI, LangChain, LangGraph, OpenAI SDK, Prometheus, Grafana.}
+ \resumeSubHeadingListEnd
+
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Bci Bank}{Santiago, Chile}
+      {Machine Learning Engineer}{Aug 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Scalable Agentic Services: }
+          {Designed and deployed containerized agent services on Kubernetes, supporting 100 recurring users and 500 account executives across internal channels including Google Chat and web interfaces.}
+        \resumeItem{Performance Optimization: }
+          {Reduced end-to-end response latency from 30s to 10s through architectural improvements, async pipelines, and optimized LLM tool use.}
+        \resumeItem{Distributed Callbacks Architecture: }
+          {Implemented Kafka-based callback handling for LangGraph agents; built consumer pipeline that delivered events from Kafka to Databricks for downstream processing and analytics.}
+        \resumeItem{API and System Design: }
+          {Built REST services powering internal Generative AI products; implemented rate limiting (100/s), pagination for conversational agents, and monitoring integrations.}
+        \resumeItem{Production Reliability: }
+          {Built structured logging, Prometheus metrics, and alerting dashboards in Grafana; deployed HPA (up to 3 replicas) to ensure stability under burst demand.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Entel}{Santiago, Chile}
+      {AI Engineer}{Apr 2025 -- Aug 2025}
+      \resumeItemListStart
+        \resumeItem{Backend + AI Infra Ownership: }
+          {Led design and deployment of modular AI microservices with CI/CD pipelines across dev/staging/prod, ensuring reliability and rapid iteration.}
+        \resumeItem{Cost Reduction: }
+          {Achieved 60× cost reduction in transcription workloads by replacing external processors with a scalable AWS container-based service.}
+        \resumeItem{Stakeholder Communication: }
+          {Delivered technical roadmaps and architectural proposals to engineering managers, directors, and executive leadership.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Entel}{Santiago, Chile}
+      {Data Scientist Specialist}{Apr 2024 -- Mar 2025}
+      \resumeItemListStart
+        \resumeItem{LLM-Powered Systems: }
+          {Built internal RAG chatbot on AWS using ECS, Lambda, and RDS, enabling employees to query technical documentation with high retrieval accuracy.}
+        \resumeItem{MVP Development: }
+          {Developed POCs and MVPs to validate Generative AI use cases; provided data insights to inform product decisions.}
+        \resumeItem{Cloud Infrastructure: }
+          {Managed AWS deployments, cost monitoring, and service provisioning for internal AI initiatives.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\end{document}
