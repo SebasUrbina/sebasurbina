@@ -5,7 +5,7 @@
 
 - 🌱 I’m currently learning about **C++**
 
-- 📫 How to reach me **sebastian.urbina@ug.uchile.cl**
+- 📫 How to reach me **sebastian.urbina97@gmail.com**
 
 <p align="center">
     <a href="https://linkedin.com/in/sebaurbina">
