@@ -1,9 +1,9 @@
 <h1 align="center">Hi 👋, I'm Sebastián Urbina</h1>
 <h3 align="center">Industrial Engineering/MSc Data Science from the University of Chile</h3>
 
-- 🔭 I’m currently working as a **Senior Specialist Data Scientist** at [entel]([https://www.entel.cl/)
+- 🔭 I’m currently working as a **Machine Learning Enginner** at [Bci Bank](https://www.bci.cl/personas)
 
-- 🌱 I’m currently learning about **Gen AI Models/Applications**
+- 🌱 I’m currently learning about **C++**
 
 - 📫 How to reach me **sebastian.urbina@ug.uchile.cl**
 
