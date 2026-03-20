@@ -45,12 +45,11 @@
 
 \newcommand{\resumeSubheading}[4]{
   \vspace{-1pt}\item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
+    % CAMBIO AQUÍ: De textwidth a linewidth
+    \begin{tabular*}{0.97\linewidth}{@{\extracolsep{\fill}}l r}
+      \textbf{#1}: #3 - \textit{\small#2} & \textit{\small #4} \\
     \end{tabular*}\vspace{-5pt}
 }
-
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 \newcommand{\resumeSubItemcol}[2]{\resumeItem{#1}{#2}\vspace{-8pt}}
 
@@ -77,15 +76,15 @@
 %----------SUMMARY-----------------
 \vspace{8pt}
 \noindent
-Data Scientist experience in designing, developing, and deploying Traditional/Generative AI solutions in a corporate environment. Skilled in technical leadership, cloud infrastructure, and cross-functional collaboration. Strong background in data science, machine learning, and delivering business value.
+Versatile data science and machine learning engineer with proven experience designing, developing, and deploying AI-driven solutions in diverse corporate settings. Skilled in generative AI, end-to-end technical implementation, cloud infrastructure, MLOps, and agile project leadership. Adept at technical communication, cross-functional teamwork, and translating business needs into measurable results across multiple industries.
 
 %-----------EDUCATION-----------------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
       {University of Chile}{Santiago, Chile}
-      {MSc in Data Science; GPA: 6.7/7.0 }{2023 - 2024}
-      \resumeSubheading
+      {MSc in Data Science; GPA: 6.7/7.0}{2023 - 2024}
+    \resumeSubheading
       {University of Chile}{Santiago, Chile}
       {BSc in Industrial Engineering; GPA: 6.4/7.0}{2018 - 2024}
       \resumeSubHeadingListStart
@@ -98,29 +97,44 @@ Data Scientist experience in designing, developing, and deploying Traditional/Ge
 \section{Programming Skills}
  \resumeSubHeadingListStart
  \resumeSubItem{}{
-    \textbf{Languages}{: Python (advanced), R (intermediate), JavaScript (basic), SQL (intermediate)}
+    \textbf{Languages}{: Python, R, SQL.}
      }
  \resumeSubItem{}{
-    \textbf{Technologies and Frameworks}{: AWS (intermediate), GCP (basic), Git (advanced)}
+    \textbf{Technologies and Frameworks}{: AWS, GCP, Git, FastAPI, LanggChain, LangGraph, OpenAI SDK, Docker, Kubernetes, LLMs.}
     }
+    \resumeSubItem{}{
+      \textbf{Tools}{: Tableau, Power BI, Jira, Confluence.}
+      }
  \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------------
 \section{Experience}
   \resumeSubHeadingListStart
+    \resumeSubheading
+      {Bci Bank}{Santiago, Chile}
+      {Machine Learning Engineer}{August 2025 - Present}
+      \resumeItemListStart
+        \resumeItem{Proof of Concept (POC) Development: }
+          {Built a financial advisory agent to advise customers on their financial goals and investment options, improving efficiency and standardization of recommendations.}
+        \resumeItem{Production Deployment of Agentic Services: }
+          {Developed and deployed scalable REST-based production-grade agent services on Kubernetes, integrating them with channels such as Google Chat and internal web applications.}
+        \resumeItem{Investment Advisory Agent: }
+          {Built a financial advisory agent adopted by account executives to support portfolio analysis and client decision-making, improving efficiency and standardization of recommendations.}
+        \resumeItem{Technical Architecture: }
+          {Architected end-to-end solutions for agent deployment, monitoring, and maintenance, ensuring operational reliability, security, and high availability across environments. }
+      \resumeItemListEnd
 
     \resumeSubheading
       {Entel}{Santiago, Chile}
-      {Data Scientist Senior Specialist (AI Engineer)}{April 2025 - Present}
+      {AI Engineer}{April 2025 - August 2025}
       \resumeItemListStart
         \resumeItem{Ownership of Generative AI products: }
           {Led technical development and iteration of Generative AI solutions, aligning with business goals and delivering continuous value.}
-        \resumeItem{Technical solution design: }
-          {Defined scalable technical architectures aligned with Entel's corporate Generative AI strategy.}
+        \resumeItem{Technical solution design and CI/CD: }
+          {Defined scalable technical architectures and designed APIs to support modular AI services aligned with Entel's corporate Generative AI strategy, including the implementation of CI/CD pipelines for development, staging, and production environments. Integrating end-to-end Generative AI pipelines into business areas.}
         \resumeItem{Stakeholder communication: }
           {Prepared and delivered both technical and executive-level presentations to communicate project progress, results, and roadmaps to diverse stakeholders.}
-
-    \resumeItemListEnd
+      \resumeItemListEnd
 
     \resumeSubheading
       {Entel}{Santiago, Chile}
@@ -132,35 +146,10 @@ Data Scientist experience in designing, developing, and deploying Traditional/Ge
             {Built MVPs using Generative AI and presented data-driven insights to guide strategic decisions across business areas.}
         \resumeItem{Chatbot with RAG architecture: }
           {Built a chatbot using Retrieval-Augmented Generation (RAG) to answer questions based on internal documentation, leveraging AWS services such as ECS, RDS, and Lambda.}
-          \resumeItem{Cloud management: }
+        \resumeItem{Cloud management: }
           {Managed and deployed cloud infrastructure on AWS, provisioning services, monitoring costs, and supporting the team in adopting new cloud tools and practices.}
       \resumeItemListEnd
-
-    \resumeSubheading
-      {Entel}{Santiago, Chile}
-      {Data Scientist}{August 2023 - March 2024}
-      \resumeItemListStart
-        \resumeItem{Anomaly detection: }
-          {Developed a methodology using clustering techniques to identify antennas with anomalous energy consumption; 80\% of the identified antennas presented opportunities for energy efficiency improvements.}
-        \resumeItem{Customer experience insights: }
-          {Created a novel metric to evaluate customer experience by processing hundreds of millions of quality and coverage data points, including geospatial analysis to evaluate customer experience trought network coverage.}
-        \resumeItem{Customer segmentation modeling: }
-          {Trained a supervised models to classify customers based on quality indicators of mobile phone data.}
-      \resumeItemListEnd
   \resumeSubHeadingListEnd
-
-
-%-----------PROJECTS-----------------
-%TODO: Evaluate how to show my personal projects.
-% \section{Projects}
-%   \resumeSubHeadingListStart
-%   \resumeSubItem{}
-%   {\href{https://github.com/SebasUrbina/expense-tracker-telegram-bot}{Expense Tracker Bot:} Designed and implemented a serverless Telegram bot leveraging AWS Lambda, DynamoDB, and the Google Sheets API to automate expense tracking and seamless data updates in Google Sheets.}
-%   \resumeSubItem{}
-%   {\href{https://github.com/SebasUrbina/ask-to-me}{Ask-to-me:} A Chatbot created in Streamlit to answer questions about my CV using Llama-Index and ChatGPT.}
-%   \resumeSubItem{}
-%       {\href{https://github.com/SebasUrbina/whisper-app}{Whisper APP:} A streamlit app to utilize the open-source speech-to-text model developed by OpenAI for transcribing audio files.}
-%   \resumeSubHeadingListEnd
 
 %-------CERTIFICATIONS------------------  
 \section{Certifications}
